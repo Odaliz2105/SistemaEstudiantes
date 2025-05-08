@@ -13,6 +13,8 @@ public class Main {
         int numeroNotas = teclado.nextInt();
         teclado.nextLine();
 
+        //Nayely haciendo un saludo
+
         Estudiante cursoActual = new Estudiante(nombreEstudiante);
         while (it < numeroNotas) {
             System.out.println("Ingrese el nombre la nota #" + (it + 1) + ":");
