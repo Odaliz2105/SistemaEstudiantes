@@ -1,5 +1,6 @@
-class Estudiante {
+import java.text.DecimalFormat;
 
+class Estudiante {
     private String nombre;
     private float total;
 
