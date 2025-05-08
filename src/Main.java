@@ -11,7 +11,7 @@ public class Main {
         int numeroNotas = teclado.nextInt();
         teclado.nextLine();
 
-        Curso cursoActual = new Estudiante(nombreEstudiante);
+        Estudiante cursoActual = new Estudiante(nombreEstudiante);
         while (it<numeroNotas) {
             System.out.println("Ingrese el nombre la nota #"+(it+1)+":");
             float notaActual = teclado.nextFloat();
