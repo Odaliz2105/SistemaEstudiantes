@@ -11,5 +11,18 @@ public class Main {
         int numeroNotas = teclado.nextInt();
         teclado.nextLine();
 
+        Estudiante cursoActual = new Estudiante(nombreEstudiante);
+        while (it<numeroNotas) {
+            System.out.println("Ingrese el nombre la nota #"+(it+1)+":");
+            float notaActual = teclado.nextFloat();
+            teclado.nextLine();
+            if (0<=notaActual && notaActual <= 10) {
+                cursoActual.Promedio(notaActual);
+                it++;
+            }else {
+                System.out.println("El nota no es válida. Intente de nuevo (0 a 10)");
+            }
+        }
+
     }
 }
