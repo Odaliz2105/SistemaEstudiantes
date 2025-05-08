@@ -1,12 +1,23 @@
-public class Estudiante {
-    public String nombre;
-    public double calificacion;
-    public double promedio;
+class Estudiante {
 
-    public Estudiante (String nombre, double calificacion, double promedio){
-       this.nombre=nombre;
-       this.calificacion=calificacion;
-       this.promedio=promedio;
+    private String nombre;
+    private float total;
+
+    public Estudiante(String nombreEstudiante){
+        this.nombre = nombreEstudiante;
+        this.total = 0;
     }
 
+    public float Promedio(float notaActual){
+        this.total += notaActual;
+        return this.total;
+    }
+
+    public float getTotal(int numeroNotas) {
+        return total/numeroNotas;
+    }
+
+    public String getNombre() {
+        return this.nombre;
+    }
 }
